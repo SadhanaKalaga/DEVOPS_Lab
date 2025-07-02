@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Registration</title>
+  <style>
+    body { 
+        font-family: Arial, sans-serif; 
+        background: #f5f5f5; 
+        display: flex; 
+        justify-content: center; 
+        padding: 30px; 
+    }
+    form { 
+        background: #fff; 
+        padding: 20px 30px; 
+        border-radius: 10px; 
+        box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+        width: 300px; 
+    }
+    input, textarea, button { width: 100%; margin: 8px 0; padding: 8px; border: 1px solid #ccc; border-radius: 5px; }
+    label { display: block; margin-top: 10px; font-weight: bold; }
+    .inline { display: inline-block; width: auto; margin-right: 10px; }
+    textarea { resize: vertical; }
+    button { background: #4CAF50; color: white; border: none; cursor: pointer; }
+    button:hover { background: #45a049; }
+  </style>
+</head>
+<body>
+<form>
+  <h2>Student Registration</h2>
+  <input type="text" placeholder="First Name" required>
+  <input type="text" placeholder="Last Name" required>
+  <input type="email" placeholder="Email" required>
+  <input type="password" placeholder="Password" required>
+  <input type="text" placeholder="Phone Number">
+  <input type="text" placeholder="Address">
+  <input type="date" placeholder="DOB">
+  <input type="number" placeholder="Roll Number">
+  <input type="text" placeholder="Department">
+  <input type="text" placeholder="College Name">
+  <input type="text" placeholder="City">
+  
+  <label>Gender:</label>
+  <label class="inline"><input type="radio" name="gender"> Male</label>
+  <label class="inline"><input type="radio" name="gender"> Female</label>
+  <label class="inline"><input type="radio" name="gender"> Other</label>
+  
+  <label>Languages Known:</label>
+  <label class="inline"><input type="checkbox"> English</label>
+  <label class="inline"><input type="checkbox"> Hindi</label>
+  <label class="inline"><input type="checkbox"> Other</label>
+  
+  <label>About You:</label>
+  <textarea rows="4" placeholder="Tell us about yourself..."></textarea>
+  
+  <button type="submit">Register</button>
+</form>
+</body>
+</html>
